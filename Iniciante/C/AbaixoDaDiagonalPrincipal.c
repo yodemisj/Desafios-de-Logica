@@ -3,7 +3,7 @@
 int main(){
     int i,j;
     float M[12][12], resultado = 0;
-    int inicioC = 1;
+    int fimC = 1;
     char operacao;
     
     scanf(" %c",&operacao);
@@ -13,11 +13,11 @@ int main(){
         }
     }
 
-    for(i = 0; i < 12; i++){
-        for(j = inicioC; j < 12; j++){
+    for(i = 1; i < 12; i++){
+        for(j = 0; j < fimC; j++){
             resultado += M[i][j];
         }
-        inicioC++;
+        fimC++;
     }
 
     if(operacao == 'M'){
