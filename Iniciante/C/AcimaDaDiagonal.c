@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main(){
-    int i,j,coluna;
+    int i,j;
     float M[12][12], resultado = 0;
+    int inicioC = 1;
     char operacao;
     
-    scanf("%d",&coluna);
     scanf(" %c",&operacao);
     for(i = 0; i < 12; i++){
         for(j = 0; j < 12; j++){
@@ -14,7 +14,10 @@ int main(){
     }
 
     for(i = 0; i < 12; i++){
-        resultado += M[i][coluna];
+        for(j = inicioC; j < 12; j++){
+            resultado += M[i][j];
+        }
+        inicioC++;
     }
 
     if(operacao == 'M'){
