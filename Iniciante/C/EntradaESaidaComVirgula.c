@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main(){
-    char str[120];
+    char str[128];
     int i=0;
 
-    fgets(str,101,stdin);
+    fgets(str,128,stdin);
 
     while(str[i] != ',' && str[i+1] != '\0'){
         printf("%c",str[i]);
