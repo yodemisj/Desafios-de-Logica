@@ -10,11 +10,10 @@ int main(){
         i++;
     }
     i++;
+    
     if(str[i]!='\0')printf("\n");
     while(str[i] != '\0'){
         printf("%c",str[i]);
         i++;
     }
-    printf("\n");
-
 }
